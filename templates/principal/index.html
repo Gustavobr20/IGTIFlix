@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IGTIFLIX</title>
+
+    <link href="{% static 'css/principal.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/menu.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/crud.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+    <header>
+        {% include "../menu.html" %}
+    </header>
+
+    <main>
+        <h1 class="titulo">IGTIFLIX</h1>
+    </main>
+
+</body>
+</html>

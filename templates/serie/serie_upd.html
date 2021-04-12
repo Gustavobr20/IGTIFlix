@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IGTIFlix</title>
+    <link  href="{% static 'css/menu.css' %}" rel="stylesheet" type="text/css">
+    <link  href="{% static 'css/crud.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        {% include "../menu.html" %}
+    </header>
+
+     <main>
+        <div class="container">
+             <div class="divForms">
+                 <form onsubmit="/serie" class="form-serie" method="post">
+                     {{ form }}
+                     {% csrf_token %}
+                     <input type="submit" class="submit-button" value="Enviar">
+                 </form>
+             </div>
+        </div>
+    </main>
+
+    <script>
+          function updateItem(id) {
+                window.history.go('/serie/update/'+id);
+            }
+    </script>
+
+</body>
+</html>

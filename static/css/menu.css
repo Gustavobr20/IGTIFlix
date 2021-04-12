@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    font-family: cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #20c997;
+
+}
+
+li {
+    float: left;
+}
+
+a{
+    text-decoration: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px
+}
+
+li a:hover {
+    font-weight: bold;
+    background: #00a293;
+}
